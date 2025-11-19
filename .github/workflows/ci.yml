@@ -41,9 +41,9 @@ jobs:
     needs: mongo-init
 
     env:
-      PORT: ${{ secretd.PORT }}
-      MONGO_URI:  ${{ secretd.MONGO_URI }}
-      JWT_SECRET:  ${{ secretd.JWT_SECRET }}
+      PORT: ${{ secrets.PORT }}
+      MONGO_URI:  ${{ secrets.MONGO_URI }}
+      JWT_SECRET:  ${{ secrets.JWT_SECRET }}
 
     steps:
 
